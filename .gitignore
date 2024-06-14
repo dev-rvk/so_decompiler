@@ -6,5 +6,5 @@ tsconfig.json
 ghidra.js
 ghidra.ts
 app-debug.apk
-uploads/*
-output/*
+uploads/libc++_shared.so
+uploads/liborbit-jni-spotify.so
