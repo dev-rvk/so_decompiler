@@ -6,7 +6,7 @@ A tool which uses a containerized workflow to decompile .so files to C codes usi
 1. **Clone the repo and cd into the project directory**
    ```plaintext
     git clone https://github.com/dev-rvk/so_decompiler.git
-    cd so_decompiler.git
+    cd so_decompiler
    ```
 2. **Build the docker image**
    For x86 systems (MacOS, Windows, Linux)
