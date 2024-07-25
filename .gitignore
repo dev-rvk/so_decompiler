@@ -1,10 +1,1 @@
-angr_decomp.c
-out_ghidra.c
-out_ghidra.h
-package*.json
-tsconfig.json
-ghidra.js
-ghidra.ts
-app-debug.apk
-uploads/libc++_shared.so
-uploads/liborbit-jni-spotify.so
+output/*

@@ -1,5 +1,6 @@
 # Use a base image with Python and Docker
 FROM --platform=linux/amd64 python:3.8-slim
+LABEL maintainer="dev-rvk"
 
 # Install basic dependencies
 RUN apt-get update && \
