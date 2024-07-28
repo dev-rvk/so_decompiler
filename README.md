@@ -1,8 +1,30 @@
 ## .so Decompiler
 A tool which uses a containerized workflow to decompile .so files to C codes using two decompilation frameworks Ghidra and Angr.
 
-## Setup and Usage
+## Usage
+1. Pull from dockerhub
+```bash
+   docker pull devrvk/so-decompiler:latest
+```
+2. Create directory structure in some parent directory
+```bash
+   mkdir output
+   mkdir uploads
+```
+Keep the so file to decompile in the uploads directory.
 
+3. Run the image to decompile so file in ./uploads
+```bash
+   docker run -v ./uploads:/decompile/uploads -v ./output:/decompile/output decompiler <args> /decompile/uploads/<name>.so /decompile/output
+```
+Note: Specify the decompiler that you want to use in arguments 
+```plaintext
+   ghidra    : Use Ghidra as the decompiler
+    angr      : Use Angr as the decompiler
+    decompile : Use Both (Note this may not work for larger .so files)
+```
+
+## Build on your system
 1. **Clone the repo and cd into the project directory**
    ```plaintext
     git clone https://github.com/dev-rvk/so_decompiler.git
